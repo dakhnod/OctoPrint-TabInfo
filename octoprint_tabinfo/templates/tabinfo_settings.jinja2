@@ -1,0 +1,17 @@
+<form class="form-horizontal">
+    <div class="control-group">
+        <label class="control-label">{{ _('Idle template') }}</label>
+        <div class="controls">
+            <input type="text" class="input-block-level" data-bind="value: settings.plugins.tabinfo.template_idle">
+        </div>
+        <label class="control-label">{{ _('Printing template') }}</label>
+        <div class="controls">
+            <input type="text" class="input-block-level" data-bind="value: settings.plugins.tabinfo.template_printing">
+        </div>
+        <div class="controls">
+            <label class="checkbox">
+                <input type="checkbox" data-bind="checked: settings.plugins.tabinfo.log_binding"> {{ _('Print binding object to browser debugger log') }}
+            </label>
+        </div>
+    </div>
+</form>
