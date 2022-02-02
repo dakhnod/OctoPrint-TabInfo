@@ -22,7 +22,7 @@ class TabinfoPlugin(octoprint.plugin.SettingsPlugin,
         return {
             'template_idle': '{temps.0.tool0.actual}° {temps.0.bed.actual}°',
             'template_printing': '{progress.completion}%, {progress.printTimeLeftFuzzy}',
-            'log_binding': '0'
+            'log_binding': False
         }
 
     def get_template_configs(self):
