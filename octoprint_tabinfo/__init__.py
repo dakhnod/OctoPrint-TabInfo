@@ -20,8 +20,8 @@ class TabinfoPlugin(octoprint.plugin.SettingsPlugin,
 
     def get_settings_defaults(self):
         return {
-            'template_idle': '{state}, {temperature_hotend}',
-            'template_printing': '{progress}%, {remaining_fuzzy}',
+            'template_idle': '{temps.0.tool0.actual}° {temps.0.bed.actual}°',
+            'template_printing': '{progress.completion}%, {progress.printTimeLeftFuzzy}',
             'log_binding': '0'
         }
 
